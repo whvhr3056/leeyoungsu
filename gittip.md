@@ -1,3 +1,4 @@
+#git 기본 명령
     git init
         새로운 local repository 생성
     git add
@@ -7,11 +8,11 @@
     git push
         local repository를 remote repository에 업로드
         
-        6) 커밋
+
 
 commit 메시지를 작성합니다.
 
-# git commit -m "메시지내용"
+# 커밋 git commit -m "메시지내용"
 
 -m 옵션은 간단하게 한줄로 메시지를 작성하기 위함이며, 긴 메시지 작성이 필요하다면 git commit 명령어만 실행하면 됩니다.
 
@@ -20,7 +21,7 @@ commit 메시지를 작성합니다.
 
 remote repository를 등록합니다.
 
-# git remote add origin {remote repository 주소}
+# 원격 저장소 등록 git remote add origin {remote repository 주소}
 
 origin은 remote repository의 별칭을 의미하며, 매 번 remote repository의 주소를 입력하는 것이 귀찮으므로 별칭을 사용합니다.
 
@@ -30,7 +31,7 @@ origin은 remote repository의 별칭을 의미하며, 매 번 remote repository
 
 commit 한 내용을 remote repository에 push( 업로드 ) 합니다.
 
-# git push origin master
+# git push origin 브랜치 명
 
 master는 브랜치( branch )의 이름이며, remote repository를 생성하면 기본적으로 master 브랜치가 생성됩니다.
 
@@ -38,5 +39,3 @@ master는 브랜치( branch )의 이름이며, remote repository를 생성하면
 
 
 master가 아닌 다른 branch로 push 하고 싶으면, 아래와 같이 master를 특정 브랜치명으로 바꿔서 명령어를 실행하면 됩니다.
-
-# git push origin {브랜치명}
