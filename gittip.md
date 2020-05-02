@@ -1,4 +1,4 @@
-#git 기본 명령
+ # git 기본 명령
     git init
         새로운 local repository 생성
     git add
@@ -39,3 +39,22 @@ master는 브랜치( branch )의 이름이며, remote repository를 생성하면
 
 
 master가 아닌 다른 branch로 push 하고 싶으면, 아래와 같이 master를 특정 브랜치명으로 바꿔서 명령어를 실행하면 됩니다.
+## 깃 리모트 변경 하기
+
+### 기존 리포지토리 깔끔하게 pull / push
+```
+git pull
+git add .
+git commit -m "clean push"
+git push
+```
+
+### 기존 리포지토리 remote 제거
+```
+git remote remove origin
+```
+
+### 새 리포지토리 remote 추가
+```
+git remote add origin https://github.com/계정/리포지토리
+```
