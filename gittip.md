@@ -56,5 +56,7 @@ git push
 git remote remove origin
 ```
 
-### 새 리포지토리 remote 추가
+## reset 되돌리는 방법
+git reflog
+이후 git reset --hard HEAD@{해당번호}
 ```
